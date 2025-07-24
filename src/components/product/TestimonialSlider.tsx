@@ -8,12 +8,8 @@ import Image from 'next/image';
 import React from 'react';
 import { Typography } from '../common/Typography';
 import { CaretLeftIcon, CaretRightIcon } from '@phosphor-icons/react';
+import { slides } from '../../data/testimonialData';
 
-const slides = [
-    { id: 1, testimonial: '“ Examly’s structured approach and expert guidance have transformed my preparation. Their AI-driven study plans and real-time simulations made complex topics easy to master. Thanks to their innovative learning methods, I cleared my exam on the first attempt and feel confident in my career growth.”', name: 'John Doe', avatar: '/images/products/profile.png', desc: 'CPA Candidate' },
-    { id: 2, testimonial: '“ Examly’s structured approach and expert guidance have transformed my preparation. Their AI-driven study plans and real-time simulations made complex topics easy to master. Thanks to their innovative learning methods, I cleared my exam on the first attempt and feel confident in my career growth.”', name: 'John Doe', avatar: '/images/products/profile.png', desc: 'CPA Candidate' },
-    { id: 3, testimonial: '“ Examly’s structured approach and expert guidance have transformed my preparation. Their AI-driven study plans and real-time simulations made complex topics easy to master. Thanks to their innovative learning methods, I cleared my exam on the first attempt and feel confident in my career growth.”', name: 'John Doe', avatar: '/images/products/profile.png', desc: 'CPA Candidate' }
-];
 export default function TestimonialSlider() {
     const [activeTestimonial, setactiveTestimonial] = React.useState(0);
     return (
@@ -38,7 +34,7 @@ export default function TestimonialSlider() {
                                     <Typography variant="h3" className="text-xl md:text-3xl">{slide.testimonial}</Typography>
                                 </div>
                             </div>
-                            <div className="flex justify-between items-center px-4">
+                            <div className="flex justify-between items-center px-24">
                                 <div className="flex items-center gap-2">
                                     <Image src={slide.avatar} alt={slide.name} width={50} height={50} />
                                     <div>

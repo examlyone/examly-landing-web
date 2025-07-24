@@ -6,7 +6,7 @@ import { features } from "../../data/featureData";
 
 export default function OurFeatures() {
     return (
-        <section className="container mx-auto py-12">
+        <section className="container mx-auto px-4 py-12">
             <div className="flex flex-col md:flex-row items-center gap-4">
                 <div className='w-full md:w-1/2'>
                     <Typography variant="h1" className="text-xl md:text-4xl mb-4">
