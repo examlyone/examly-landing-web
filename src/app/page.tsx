@@ -29,17 +29,19 @@ export default function Home() {
           </div>
 
           {/* Right column - 40% width (2/5 columns) */}
-          <div className="md:col-span-2">
-            <div>
+          <div className=" grid grid-cols-2 md:col-span-2 gap-6 items-center">
+            <div className="flex justify-center items-center">
               <Image src="/images/home/hero.svg" alt="hero" width={300} height={300} />
-              <div className="flex flex-col justify-between h-full p-6">
+              </div>
+            <div className="grid grid-cols-1 gap-6 bg-[#F9F0DF] mt-9">
+              <div className="grid grid-col justify-between md:h-64 md:py-10 sm:p-8 border border-gray-300 rounded-lg shadow-lg sm:h-25 lg-full h-full flex flex-col">
                 {/* Top section with stat and description */}
-                <div className="flex flex-col">
-                  <Text variant="h1" className={`text-[#143E39] text-7xl font-bold mb-2`}>
+                <div className="flex flex-col sm:flex-col items-center justify-between">
+                  <Text variant="h1" className={`text-[#F143E39] sm:text-4xl md:text-5xl  font-bold mb-2 `}>
                     3M+
                   </Text>
-                  <Text variant="p" className={`text-[#143E39] text-sm`}>
-                    CPA candidates
+                  <Text variant="p" className={`text-[#143E39] text-sm text-justify p-5 font-normal`}>
+                    CPA candidates who have prepared with Examly.
                   </Text>
                 </div>
 
@@ -55,6 +57,19 @@ export default function Home() {
               </div>
             </div>
             {/* <HeroStatsGroup className="w-full" /> */}
+            <div className="md:col-span-2 flex flex-col justify-space-between">
+              <div className="grid grid-cols-2 bg-blue-100 p-20 rounded-lg shadow-lg sm:w-full">
+                 <div className="flex text-left items-center">
+                    <Text variant="p" className="">
+                      Drive your career
+                       forward,not your expenses.
+                    </Text> 
+                 </div>
+                 <div className="flex justify-end items-center flex flex-cols-3">
+                    
+                 </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
