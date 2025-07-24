@@ -10,9 +10,9 @@ export default function ExamlyPossibility() {
                 <div className="flex flex-col items-center gap-2">
                     <Typography variant="h1" className="text-xl md:text-4xl mb-4 text-white">Examly has no limitations – only possibilities.</Typography>
                     <Typography variant="body1" className="mb-8 text-center text-white">Step forward into your future with smart learning, expert guidance, and AI-powered prep.Get started on your success journey with Examly today!</Typography>
-                   <Button variant="outline" href="/try-it-free" showArrow={false}>
-                            Try it for free
-                        </Button>
+                    <Button variant="outline" href="/try-it-free" showArrow={false}>
+                        Try it for free
+                    </Button>
                 </div>
             </section>
         </div>
