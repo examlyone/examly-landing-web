@@ -3,8 +3,8 @@ export const menuItems = [
         label: 'Products',
         href: '/products',
         items: [
-            { label: 'CPA Exam Prep', href: '/exam-prep/cpa-exam-prep' },
-            { label: 'CMA Exam Prep', href: '/exam-prep/cma-exam-prep' },
+            { label: 'CPA Exam Prep', href: '/products/cpa-exam-prep' },
+            { label: 'CMA Exam Prep', href: '/products/cma-exam-prep' },
         ],
     },
     {
