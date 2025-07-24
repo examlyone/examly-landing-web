@@ -18,11 +18,10 @@ export default function Header() {
   const toggleMobileMenu = () => setMobileOpen((prev) => !prev);
 
   return (
-    <header className="w-full px-6 py-4 bg-white border-b border-gray-200 shadow-sm fixed top-0 z-50">
+    <header className="w-full py-4 bg-white border-b border-gray-200 shadow-sm fixed top-0 z-50">
       <div className="relative flex items-center justify-between max-w-7xl mx-auto">
-        {/* Logo */}
         <Link href="/" className="flex items-center">
-          <Image src="/logo.svg" alt="examly" width={106} height={37} />
+          <Image src="/logo.svg" alt="examly" width={130} height={87} />
         </Link>
 
         {/* Desktop Navigation */}

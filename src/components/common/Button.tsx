@@ -24,9 +24,9 @@ export function Button({
   const baseStyles = 'inline-flex items-center justify-center font-plus-jakarta font-medium text-base transition-all duration-300 ease-in-out';
   
   const variantStyles = {
-    outline: 'px-6 py-3 rounded-md bg-white border border-black text-black hover:bg-black hover:text-white',
-    filled: 'px-6 py-3 rounded-md bg-black text-white border border-black hover:border-black',
-    text: 'text-black underline hover:text-gray-700 p-0',
+    outline: 'px-6 py-3 rounded-md bg-white border border-black text-black hover:bg-[#143E39] hover:text-white',
+    filled: 'px-6 py-3 rounded-md bg-[#143E39] text-white border border-black hover:border-[#143E39]',
+    text: 'text-[#143E39] underline hover:text-gray-700 p-0',
     'arrow-only': 'p-3 rounded-full bg-white border border-gray-200 hover:border-blue-500 hover:shadow-md'
   };
 
