@@ -15,7 +15,7 @@ export default function Footer() {
             <Link href="/" className="inline-block mb-4">
               <Image src="/logo.svg" alt="examly" width={106} height={37} />
             </Link>
-            <p className="text-xl text-justify text-gray-600 mb-6">
+            <p className="text-lg md:text-xl text-justify text-gray-600 mb-6">
               We offer a comprehensive suite of exam preparation resources covering CPA, CMA, ACCA, and EA.
               From AI-driven study plans and live classes to real-time simulations and expert mentorship, Examly guides you to success.
             </p>
