@@ -9,13 +9,13 @@ import { socialLinks, products, policies, contact } from '@/data/footerData';
 export default function Footer() {
   return (
     <footer className="w-full py-12 px-4 bg-white border-t border-gray-200">
-      <div className="container mx-auto">
+      <div className="container mx-auto px-4 lg:px-36">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <Link href="/" className="inline-block mb-4">
               <Image src="/logo.svg" alt="examly" width={106} height={37} />
             </Link>
-            <p className="text-lg md:text-xl text-justify text-gray-600 mb-6">
+            <p className="text-md text-justify text-gray-600 mb-6">
               We offer a comprehensive suite of exam preparation resources covering CPA, CMA, ACCA, and EA.
               From AI-driven study plans and live classes to real-time simulations and expert mentorship, Examly guides you to success.
             </p>
@@ -45,7 +45,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {products.map(({ label, href }) => (
                 <li key={label}>
-                  <Link href={href} className="text-gray-600 hover:text-black text-lg">{label}</Link>
+                  <Link href={href} className="text-gray-600 hover:text-black text-md">{label}</Link>
                 </li>
               ))}
             </ul>
@@ -55,7 +55,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {policies.map(({ label, href }) => (
                 <li key={label}>
-                  <Link href={href} className="text-gray-600 hover:text-black text-lg">{label}</Link>
+                  <Link href={href} className="text-gray-600 hover:text-black text-md">{label}</Link>
                 </li>
               ))}
             </ul>
@@ -75,7 +75,7 @@ export default function Footer() {
                   >
                     {icon}
                   </svg>
-                  <span className="text-gray-600 text-lg">{text}</span>
+                  <span className="text-gray-600 text-md">{text}</span>
                 </li>
               ))}
             </ul>

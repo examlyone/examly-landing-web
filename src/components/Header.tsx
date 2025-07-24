@@ -13,7 +13,7 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const isActive = (href?: string) =>
-    href && pathname === href ? 'text-blue-600 font-semibold' : 'text-black';
+    href && pathname === href ? 'text-[#143E39] font-semibold' : 'text-black';
 
   const toggleMobileMenu = () => setMobileOpen((prev) => !prev);
 
@@ -31,9 +31,9 @@ export default function Header() {
               <li key={item.label} className="group relative">
                 {item.items ? (
                   <div className="group">
-                    <span className="text-lg hover:text-gray-500 cursor-pointer">
+                    <Link href={item.href!} className={`text-lg hover:text-gray-500 ${isActive(item.href)}`}>
                       {item.label}
-                    </span>
+                    </Link>
                     <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md z-10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-150">
                       {item.items.map((sub) => (
                         <Link
