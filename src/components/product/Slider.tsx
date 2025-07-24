@@ -22,7 +22,7 @@ export default function Slider() {
 
     return (
         <div>
-            <Typography variant="h1" className="text-4xl">Take a closer look</Typography>
+            <Typography variant="h1" className="text-xl md:text-4xl">Take a closer look</Typography>
             <div
                 className={clsx(
                     'transition-colors duration-500 ease-in-out py-10 rounded-xl',

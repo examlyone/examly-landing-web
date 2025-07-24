@@ -6,7 +6,7 @@ import Faqs from '@/components/common/faqs';
 import ExamlyPossibility from '@/components/common/examly-possibility';
 import UnmatchedProductivity from '@/components/product/UnmatchedProductivity';
 import SmartPrep from '@/components/product/smart-prep';
-import OurFeatures from '@/components/product/our-features';
+import Effectivepreparation from '@/components/product/effective-preparation';
 
 export default function Products() {
     return (
@@ -14,10 +14,10 @@ export default function Products() {
             <SmartPrep />   
             <UnmatchedProductivity />
             <Slider />
+            <Effectivepreparation />
             <TestimonialSlider />
             <Faqs />
             <ExamlyPossibility />
-            <OurFeatures /> 
         </section>
     );
 }

@@ -9,7 +9,7 @@ export default function OurFeatures() {
         <section className="container mx-auto py-12">
             <div className="flex flex-col md:flex-row items-center gap-4">
                 <div className='w-full md:w-1/2'>
-                    <Typography variant="h1" className="text-4xl md:text-6xl mb-4">
+                    <Typography variant="h1" className="text-xl md:text-4xl mb-4">
                         Our Features that Drive Success
                     </Typography>
                 </div>

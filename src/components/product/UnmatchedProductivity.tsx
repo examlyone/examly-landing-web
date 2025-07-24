@@ -5,7 +5,7 @@ import { Typography } from "../common/Typography";
 export default function UnmatchedProductivity() {
     return (
         <section className="container mx-auto py-12">
-            <Typography variant="h1" className="text-4xl md:text-6xl mb-4">
+            <Typography variant="h1" className="text-xl md:text-4xl mb-4">
                 Unmatched Productivity
             </Typography>
             <Typography variant="body1" className="mb-8 text-justify">
