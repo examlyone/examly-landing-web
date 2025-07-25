@@ -2,7 +2,8 @@ import { Button } from "@/components/common/Button";
 import { Text } from "@/components/common/Text";
 import { Typography } from "@/components/common/Typography";
 import Image from "next/image";
-import { CardGroup } from "./cardgroup";
+// import { CardGroup } from "./cardgroup";
+import Practise from "./practise"; // Ensure this import matches the file structure
 
 export default function Home() {
   return (
@@ -37,8 +38,8 @@ export default function Home() {
                 className="w-full h-auto max-w-[300px]"
               />
             </div>
-            <div className="flex flex-col justify-between bg-[#F9F0DF] p-4 border border-gray-300 rounded-lg shadow-lg h-[250px] md:mt-10">
-              <div className="flex flex-col items-center">
+            <div className="flex flex-col justify-between bg-[#F9F0DF] p-4 border border-gray-300 rounded-lg align-items:end shadow-lg h-[250px] md:mt-10">
+              <div className="flex flex-col items-end">
                 <Text variant="h1" className="text-[#143E39] text-4xl md:text-5xl font-bold mb-2">
                   3M+
                 </Text>
@@ -53,10 +54,11 @@ export default function Home() {
               </div>
             </div>
             <div className="sm:col-span-2">
-              <CardGroup
+              <Practise />
+              {/* <CardGroup
                 title="Let’s move forward in life"
                 description="Drive your career forward, not your expenses."
-              />
+              /> */}
             </div>
           </div>
         </div>
