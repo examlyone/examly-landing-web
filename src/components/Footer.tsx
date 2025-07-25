@@ -1,25 +1,23 @@
-'use client'
+'use client';
 
 import Link from 'next/link';
 import Image from 'next/image';
-
 import { socialLinks, products, policies, contact } from '@/data/footerData';
-
 
 export default function Footer() {
   return (
-    <footer className="w-full py-12 px-4 bg-white border-t border-gray-200">
-      <div className="container mx-auto px-4 lg:px-36">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div>
-            <Link href="/" className="inline-block mb-4">
-              <Image src="/logo.svg" alt="examly" width={106} height={37} />
+    <footer className="w-full bg-white border-t border-gray-200">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-36 py-10 sm:py-14">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-16">
+          {/* Logo & Description */}
+          <div className="-mt-4">
+            <Link href="/" className="inline-block ">
+              <Image src="/logo.svg" alt="examly" width={136} height={67} />
             </Link>
-            <p className="text-md text-justify text-gray-600 mb-6">
-              We offer a comprehensive suite of exam preparation resources covering CPA, CMA, ACCA, and EA.
-              From AI-driven study plans and live classes to real-time simulations and expert mentorship, Examly guides you to success.
+            <p className="text-sm text-gray-600 text-justify leading-relaxed">
+              We offer a comprehensive suite of exam preparation resources covering CPA, CMA, ACCA, and EA. From AI-driven study plans and live classes to real-time simulations and expert mentorship, Examly guides you to success.
             </p>
-            <div className="flex space-x-4 mt-4">
+            <div className="flex flex-wrap gap-3 mt-4">
               {socialLinks.map(({ href, label, icon }) => (
                 <Link key={label} href={href} aria-label={label}>
                   <svg
@@ -40,34 +38,44 @@ export default function Footer() {
               ))}
             </div>
           </div>
+
+          {/* Products */}
           <div>
-            <h3 className="font-semibold text-xl mb-4">Products</h3>
+            <h3 className="font-semibold text-lg sm:text-xl mb-3">Products</h3>
             <ul className="space-y-2">
               {products.map(({ label, href }) => (
                 <li key={label}>
-                  <Link href={href} className="text-gray-600 hover:text-black text-md">{label}</Link>
+                  <Link href={href} className="text-sm sm:text-md text-gray-600 hover:text-black">
+                    {label}
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
+
+          {/* License */}
           <div>
-            <h3 className="font-semibold text-xl mb-4">Licence</h3>
+            <h3 className="font-semibold text-lg sm:text-xl mb-3">Licence</h3>
             <ul className="space-y-2">
               {policies.map(({ label, href }) => (
                 <li key={label}>
-                  <Link href={href} className="text-gray-600 hover:text-black text-md">{label}</Link>
+                  <Link href={href} className="text-sm sm:text-md text-gray-600 hover:text-black">
+                    {label}
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
+
+          {/* Contact */}
           <div>
-            <h3 className="font-semibold text-xl mb-4">Contact</h3>
+            <h3 className="font-semibold text-lg sm:text-xl mb-3">Contact</h3>
             <ul className="space-y-4">
               {contact.map(({ text, icon }, i) => (
                 <li key={i} className="flex items-start">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 mr-2 mt-0.5 text-black"
+                    className="h-5 w-5 mt-0.5 mr-2 text-black"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
@@ -75,14 +83,18 @@ export default function Footer() {
                   >
                     {icon}
                   </svg>
-                  <span className="text-gray-600 text-md">{text}</span>
+                  <span className="text-sm sm:text-md text-gray-600">{text}</span>
                 </li>
               ))}
             </ul>
           </div>
         </div>
-        <div className="mt-12 pt-6 border-t border-gray-200">
-          <p className="text-xl text-gray-600">&copy;{new Date().getFullYear()} Examly Global LLC. All rights reserved.</p>
+
+        {/* Footer Bottom */}
+        <div className="mt-10 pt-6 border-t border-gray-200 text-center">
+          <p className="text-sm sm:text-md text-gray-600">
+            &copy; {new Date().getFullYear()} Examly Global LLC. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>

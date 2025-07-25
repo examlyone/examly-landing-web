@@ -31,14 +31,14 @@ export default function TestimonialSlider() {
                         <SwiperSlide key={slide.id}>
                             <div className="flex justify-center items-center px-4">
                                 <div className="relative w-full max-w-5xl">
-                                    <Typography variant="h3" className="text-xl md:text-3xl">{slide.testimonial}</Typography>
+                                    <Typography variant="h1" className="text-xl md:text-2xl text-justify">{slide.testimonial}</Typography>
                                 </div>
                             </div>
-                            <div className="flex justify-between items-center px-24">
+                            <div className="flex justify-between items-center md:px-24">
                                 <div className="flex items-center gap-2">
                                     <Image src={slide.avatar} alt={slide.name} width={50} height={50} />
                                     <div>
-                                        <Typography variant="h3" className="text-xl">{slide.name}</Typography>
+                                        <Typography variant="h2" className="text-xl">{slide.name}</Typography>
                                         <Typography variant="h5" className="text-sm">{slide.desc}</Typography>
                                     </div>
                                 </div>

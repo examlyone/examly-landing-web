@@ -25,19 +25,24 @@ export default function OurFeatures() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-start mt-16">
                 {features.map((item, idx) => (
-                    <div key={idx} className={`flex flex-col items-start gap-4 shadow-lg p-4 rounded-xl hover:shadow-2xl transition-all duration-300`}>
-                        <div className={`w-4 h-4 rounded-full ${item.dotColor}`} />
-                        <h3 className="text-xl font-semibold">{item.title}</h3>
-                        <div className="flex items-center gap-2 py-2">
-                            <p className="text-sm text-gray-600 w-[80%]">{item.desc}</p>
+                    <div
+                        key={idx}
+                        className={`flex flex-col justify-between shadow-lg p-6 rounded-xl hover:bg-[#F9F0DF] transition-all duration-300 h-full min-h-[280px]`}
+                    >
+                        <div className="flex flex-col gap-4">
+                            <div className={`w-4 h-4 rounded-full ${item.dotColor}`} />
+                            <h3 className="text-xl font-semibold">{item.title}</h3>
+                            <p className="text-sm text-gray-600">{item.desc}</p>
+                        </div>
+                        <div className="mt-4 flex justify-end">
                             <Button variant="outline" showArrow={false}>
                                 View
                             </Button>
                         </div>
-
                     </div>
                 ))}
             </div>
+
         </section>
     );
 }

@@ -31,7 +31,7 @@ export default function Header() {
               <li key={item.label} className="group relative">
                 {item.items ? (
                   <div className="group">
-                    <Link href={item.href!} className={`text-lg hover:text-gray-500 ${isActive(item.href)}`}>
+                    <Link href={item.href!} className={`text-md whitespace-nowrap hover:text-gray-500 ${isActive(item.href)}`}>
                       {item.label}
                     </Link>
                     <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md z-10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-150">
