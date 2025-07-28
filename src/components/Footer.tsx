@@ -70,7 +70,7 @@ export default function Footer() {
           {/* Contact */}
           <div>
             <h3 className="font-semibold text-lg sm:text-xl mb-3">Contact</h3>
-            <ul className="space-y-4">
+            <ul className="space-y-3">
               {contact.map(({ text, icon }, i) => (
                 <li key={i} className="flex items-start">
                   <svg

@@ -19,7 +19,7 @@ export default function Header() {
 
   return (
     <header className="w-full py-4 bg-white border-b border-gray-200 shadow-sm fixed top-0 z-50">
-      <div className="relative flex items-center justify-between max-w-7xl mx-auto">
+      <div className="relative flex items-center justify-between max-w-7xl px-8 mx-auto">
         <Link href="/" className="flex items-center">
           <Image src="/logo.svg" alt="examly" width={130} height={87} />
         </Link>

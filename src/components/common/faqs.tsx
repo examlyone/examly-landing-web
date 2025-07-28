@@ -11,8 +11,8 @@ export default function Faqs() {
         setOpenIndex(openIndex === index ? null : index);
     };
     return (
-        <section className="container mx-auto py-12 ">
-            <div className="flex flex-col md:flex-row  gap-8">
+        <section className="container mx-auto py-12 px-4">
+            <div className="flex flex-col md:flex-row  gap-6">
                 <div className="w-full md:w-1/2 items-start md:items-center">
                     <Typography variant="h1" className="text-xl md:text-4xl mb-4">Frequently Asked Questions</Typography>
                     <Typography variant="body1" className="mb-8 text-justify">As a leading exam preparation platform, we are dedicated to providing comprehensive study resources and expert guidance to help students achieve their CPA, CMA, ACCA, and EA goals.</Typography>

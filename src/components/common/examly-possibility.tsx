@@ -5,8 +5,8 @@ import { Typography } from './Typography';
 
 export default function ExamlyPossibility() {
     return (
-        <div className="w-full mx-auto py-8 sm:py-12 lg:py-16 bg-[url('/images/products/frame.svg')] bg-cover sm:bg-contain bg-center bg-no-repeat rounded-md px-4 sm:px-6">
-            <section className="max-w-[1400px] mx-auto">
+        <section className="container mx-auto px-4">
+        <div className="w-full mx-auto py-8 sm:py-12 lg:py-16 bg-[url('/images/products/frame.svg')] bg-cover sm:bg-contain bg-center bg-no-repeat rounded-md px-14 sm:px-6">
                 <div className="flex flex-col items-center gap-3 sm:gap-4 text-center">
                     <Typography
                         variant="h1"
@@ -29,7 +29,8 @@ export default function ExamlyPossibility() {
                         Try it for free
                     </Button>
                 </div>
-            </section>
+          
         </div>
+          </section>
     )
 }
