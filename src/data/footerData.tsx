@@ -47,9 +47,9 @@ export const products = [
 
 export const policies = [
     { label: 'Privacy Policy', href: '/privacy-policy' },
-    { label: 'Copyright & Trademarks', href: '/copyright' },
-    { label: 'Cookie Policy', href: '/cookie-policy' },
-    { label: 'Refund Policy and Terms', href: '/terms' },
+    { label: 'Copyright & Trademarks', href: '/copyright-trademarks' },
+    { label: 'Terms of Service', href: '/terms' },
+    { label: 'Refund Policy and Terms', href: '/return-policy' },
     { label: 'Student Catalog & Policies', href: '#' },
     { label: 'Accessibility Statement', href: '#' },
 ];
