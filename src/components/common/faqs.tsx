@@ -13,7 +13,7 @@ export default function Faqs() {
     return (
         <section className="container mx-auto py-12 px-4">
             <div className="flex flex-col md:flex-row  gap-6">
-                <div className="w-full md:w-1/2 items-start md:items-center">
+                <div className="w-full md:w-1/2 items-start md:items-center"data-aos="zoom-out-right" data-aos-duration="800">
                     <Typography variant="h1" className="text-xl md:text-4xl mb-4">Frequently Asked Questions</Typography>
                     <Typography variant="body1" className="mb-8 text-justify">As a leading exam preparation platform, we are dedicated to providing comprehensive study resources and expert guidance to help students achieve their CPA, CMA, ACCA, and EA goals.</Typography>
                     <div className="flex items-center space-x-4">
@@ -25,7 +25,7 @@ export default function Faqs() {
                         </Button>
                     </div>
                 </div>
-                <div className="w-full md:w-1/2 items-start md:items-center">
+                <div className="w-full md:w-1/2 items-start md:items-center"data-aos="zoom-out-left" data-aos-duration="800">
                     {faqs.map((faq, index) => (
                         <div key={index} className="border-b py-4">
                             <div

@@ -14,7 +14,7 @@ export default function TestimonialSlider() {
     const [activeTestimonial, setactiveTestimonial] = React.useState(0);
     return (
         <div className='bg-[#FAFAFA] mt-4 rounded-xl shadow-lg' >
-            <div className='container mx-auto px-4 py-8'>
+            <div className='container mx-auto px-4 py-8'data-aos="zoom-in-right" data-aos-duration="800">
                 <Swiper
                     modules={[Navigation, Pagination, Autoplay]}
                     spaceBetween={50}

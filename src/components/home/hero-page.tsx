@@ -2,12 +2,17 @@ import { Button } from "@/components/common/Button";
 import { Typography } from "@/components/common/Typography";
 import CareerChart from "./career-chart";
 import CounterSection from "./counter-section";
-
+import React from "react";
+import AOS from "aos";
+import 'aos/dist/aos.css';
 export default function Home() {
+  React.useEffect(() => {
+    AOS.init();
+  },[]);
   return (
     <section className="container mx-auto py-12 px-4">
       <div className="flex flex-col md:flex-row items-center gap-4 xl:gap-6">
-        <div className="w-full h-full md:w-1/2">
+        <div className="w-full h-full md:w-1/2" data-aos="fade-right" data-aos-duration="800">
           <Typography variant="h1" className="text-2xl md:text-4xl mb-4">
             Stay ahead of the curve with our forward-thinking
           </Typography>
@@ -25,7 +30,7 @@ export default function Home() {
             </Button>
           </div>
         </div>
-        <div className="w-full h-full md:w-1/2 gap-6">
+        <div className="w-full h-full md:w-1/2 gap-6" data-aos="fade-left" data-aos-duration="800">
           <div className="flex flex-col justify-between space-y-2">
             <div>
               <CounterSection />

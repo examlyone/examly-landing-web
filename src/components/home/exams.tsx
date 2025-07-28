@@ -6,7 +6,7 @@ const images = ["/images/home/avatar/1.jpg", "/images/home/avatar/2.jpg", "/imag
 export default function Exams() {
     return (
         <section className="container mx-auto px-4 py-12 bg-[#f6f6f6] rounded-xl">
-            <div className="flex flex-col md:flex-row items-center gap-6">
+            <div className="flex flex-col md:flex-row items-center gap-6"data-aos="fade-up" data-aos-duration="800">
                 <div className="w-full md:w-1/2">
                     <Typography variant="h1" className="text-2xl md:text-4xl font-bold mb-4">
                         Ace Your CPA, CMA, ACCA, and EA Exams with Examly
@@ -20,7 +20,7 @@ export default function Exams() {
                     </p>
                 </div>
             </div>
-            <div className="flex flex-col md:flex-row items-stretch gap-6 mt-16">
+            <div className="flex flex-col md:flex-row items-stretch gap-6 mt-16" data-aos="zoom-in-right" data-aos-duration="800">
                 {/* Left Card */}
                 <div className="bg-[url('/images/home/candidate.svg')] bg-cover bg-center bg-no-repeat text-white rounded-xl p-6 w-full md:w-[40%] min-h-[300px] flex flex-col justify-between">
                     <div>

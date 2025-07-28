@@ -7,7 +7,8 @@ export default function ExamlyPossibility() {
     return (
         <section className="container mx-auto px-4">
         <div className="w-full mx-auto py-8 sm:py-12 lg:py-16 bg-[url('/images/products/frame.svg')] bg-cover sm:bg-contain bg-center bg-no-repeat rounded-md px-14 sm:px-6">
-                <div className="flex flex-col items-center gap-3 sm:gap-4 text-center">
+                <div className="flex flex-col items-center gap-3 sm:gap-4 text-center" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="800">
                     <Typography
                         variant="h1"
                         className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-2 sm:mb-4"
@@ -29,7 +30,6 @@ export default function ExamlyPossibility() {
                         Try it for free
                     </Button>
                 </div>
-          
         </div>
           </section>
     )

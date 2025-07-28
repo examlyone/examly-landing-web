@@ -7,7 +7,7 @@ import { features } from "../../data/featureData";
 export default function OurFeatures() {
     return (
         <section className="container mx-auto px-4 py-12">
-            <div className="flex flex-col md:flex-row items-center gap-4">
+            <div className="flex flex-col md:flex-row items-center gap-4" data-aos="flip-left" data-aos-duration="800">
                 <div className='w-full md:w-1/2'>
                     <Typography variant="h1" className="text-xl md:text-4xl mb-4">
                         Our Features that Drive Success
@@ -27,9 +27,10 @@ export default function OurFeatures() {
                 {features.map((item, idx) => (
                     <div
                         key={idx}
-                        className={`flex flex-col justify-between shadow-lg p-6 rounded-xl hover:bg-[#F9F0DF] transition-all duration-300 h-full min-h-[280px]`}
+                        className={`flex flex-col justify-between shadow-lg p-6 rounded-xl hover:bg-[#F9F0DF] transition-all duration-300 h-full min-h-[280px]`} 
+                        data-aos="flip-down" data-aos-duration="800"
                     >
-                        <div className="flex flex-col gap-4">
+                        <div className="flex flex-col gap-4"  data-aos="flip-up" data-aos-duration="800">
                             <div className={`w-4 h-4 rounded-full ${item.dotColor}`} />
                             <h3 className="text-xl font-semibold">{item.title}</h3>
                             <p className="text-sm text-gray-600">{item.desc}</p>
