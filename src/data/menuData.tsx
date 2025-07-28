@@ -9,7 +9,7 @@ export const menuItems = [
     },
     {
         label: 'Mega Banks',
-        href: '/mega-bank',
+        href: '/mega-banks',
         items: [
             { label: 'CPA Mega Bank', href: '/mega-bank/cpa-mega-bank' },
             { label: 'CMA Mega Bank', href: '/mega-bank/cma-mega-bank' },
